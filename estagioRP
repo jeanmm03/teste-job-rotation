@@ -1,0 +1,21 @@
+function fibonacci(num) {
+  let a = 0;
+  let b = 1;
+  let c;
+
+  if (num === a || num === b) {
+    return `${num} pertence à sequência de Fibonacci.`;
+  }
+
+  while (b <= num) {
+    c = a + b;
+    a = b;
+    b = c;
+
+    if (b === num) {
+      return `${num} pertence à sequência de Fibonacci.`;
+    }
+  }
+
+  return `${num} não pertence à sequência de Fibonacci.`;
+}
